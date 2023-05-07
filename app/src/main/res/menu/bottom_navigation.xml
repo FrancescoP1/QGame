@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_24"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/navigation_play"
+        android:icon="@drawable/ic_play_arrow_24"
+        android:title="@string/play_game" />
+    <item
+        android:id="@+id/navigation_ranking"
+        android:icon="@drawable/ic_rank_24"
+        android:title="@string/ranking" />
+</menu>
