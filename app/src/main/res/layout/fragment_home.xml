@@ -10,9 +10,18 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="TextView"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/profile_picture"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="270dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_profile_picture" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/signOut_button"
@@ -25,11 +34,21 @@
         android:textColor="@color/black" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/share_button"
+        android:id="@+id/camera_button"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop = "500dp"
+        android:backgroundTint="@color/yellow"
+        android:text="@string/take_picture"
+        android:textColor="@color/black" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/share_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop = "550dp"
         android:backgroundTint="@color/yellow"
         android:text="@string/share"
         android:textColor="@color/black" />
