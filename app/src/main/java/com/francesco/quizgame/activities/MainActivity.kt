@@ -4,12 +4,11 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
 import com.francesco.quizgame.R
 import com.francesco.quizgame.databinding.ActivityMainBinding
 import com.francesco.quizgame.fragments.HomeFragment
 import com.francesco.quizgame.fragments.PlayFragment
-import com.francesco.quizgame.fragments.RankingFragment
+import com.francesco.quizgame.fragments.AboutFragment
 import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity: AppCompatActivity() {
@@ -61,10 +60,10 @@ class MainActivity: AppCompatActivity() {
                     true
                 }
 
-                R.id.navigation_ranking -> {
-                    currentPage = getString(R.string.rankingPage)
+                R.id.navigation_about -> {
+                    currentPage = getString(R.string.aboutPage)
                     binding.Page.text = currentPage
-                    replaceFragment(RankingFragment())
+                    replaceFragment(AboutFragment())
                     true
                 }
 

@@ -7,8 +7,9 @@
         android:id="@+id/navigation_play"
         android:icon="@drawable/ic_play_arrow_24"
         android:title="@string/play_game" />
+
     <item
-        android:id="@+id/navigation_ranking"
-        android:icon="@drawable/ic_rank_24"
-        android:title="@string/ranking" />
+        android:id="@+id/navigation_about"
+        android:icon="@drawable/baseline_question_mark_24"
+        android:title="@string/about_us" />
 </menu>
