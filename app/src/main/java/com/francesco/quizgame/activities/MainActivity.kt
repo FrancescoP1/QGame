@@ -26,7 +26,7 @@ class MainActivity: AppCompatActivity() {
         currentPage = getString(R.string.home)
 
         val extras = intent.extras
-        var email = extras!!.getString("email")
+        var email = extras?.getString("email")
         if(email == null) {
             email = firebaseAuth.currentUser?.email
         }

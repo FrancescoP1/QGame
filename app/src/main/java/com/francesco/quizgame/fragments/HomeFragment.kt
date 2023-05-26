@@ -56,12 +56,16 @@ class HomeFragment : Fragment() {
         val shareButton: Button = view.findViewById(R.id.share_button)
         shareButton.setOnClickListener {
             val intent = Intent(Intent.ACTION_SEND)
-            intent.type =git
+            intent.type = "text/plain"
+            val url = "https://github.com/FrancescoP1/QGame.git"
+            intent.putExtra(Intent.EXTRA_TEXT, url)
+            val chooser = Intent.createChooser(intent , "Share using...")
+            startActivity(chooser)
         }
 
         val textView: TextView = view.findViewById(R.id.textView)
         textView.text = userEmail
-        return view;
+        return view
     }
 
     companion object {
@@ -70,7 +74,6 @@ class HomeFragment : Fragment() {
          * this fragment using the provided parameters.
          *
          * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
          * @return A new instance of fragment HomeFragment.
          */
         // TODO: Rename and change types and number of parameters
